@@ -1,0 +1,1 @@
+../../../../WeexiOSSDK/WeexSDK/Sources/Manager/WXModuleFactory.h

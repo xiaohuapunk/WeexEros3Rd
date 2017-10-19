@@ -1,0 +1,1 @@
+../../../../Benmu-iOS-Library/BMWeexExtension/WXImageComponent+BMExtend.h

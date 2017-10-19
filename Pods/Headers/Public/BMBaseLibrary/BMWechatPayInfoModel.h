@@ -1,0 +1,1 @@
+../../../../Benmu-iOS-Library/BMManager/Pay/BMWechatPayInfoModel.h

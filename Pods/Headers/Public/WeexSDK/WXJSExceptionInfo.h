@@ -1,0 +1,1 @@
+../../../../WeexiOSSDK/WeexSDK/Sources/Model/WXJSExceptionInfo.h
