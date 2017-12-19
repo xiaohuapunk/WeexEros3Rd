@@ -14,36 +14,33 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - AMap3DMap-NO-IDFA (5.5.0):
-    - AMapFoundation-NO-IDFA (~> 1.3)
+  - AMap3DMap-NO-IDFA (5.6.0):
+    - AMapFoundation-NO-IDFA (~> 1.4)
   - AMapFoundation-NO-IDFA (1.4.2)
-  - AMapNavi-NO-IDFA (5.0.1):
-    - AMap3DMap-NO-IDFA (~> 5.0)
-    - AMapFoundation-NO-IDFA (~> 1.3)
   - ATSDK-Weex (0.0.1)
-  - BMBaseLibrary/BMComponent (0.0.1):
+  - BMBaseLibrary/BMComponent (1.0.0):
     - FSCalendar (= 2.7.8)
     - YYText (= 1.0.7)
-  - BMBaseLibrary/BMController (0.0.1)
-  - BMBaseLibrary/BMCustomUI (0.0.1)
-  - BMBaseLibrary/BMDebug (0.0.1)
-  - BMBaseLibrary/BMDevice (0.0.1)
-  - BMBaseLibrary/BMExtension (0.0.1)
-  - BMBaseLibrary/BMHandler (0.0.1)
-  - BMBaseLibrary/BMManager (0.0.1)
-  - BMBaseLibrary/BMModel (0.0.1)
-  - BMBaseLibrary/BMModule (0.0.1):
+  - BMBaseLibrary/BMController (1.0.0)
+  - BMBaseLibrary/BMCustomUI (1.0.0)
+  - BMBaseLibrary/BMDebug (1.0.0)
+  - BMBaseLibrary/BMDevice (1.0.0)
+  - BMBaseLibrary/BMExtension (1.0.0)
+  - BMBaseLibrary/BMHandler (1.0.0)
+  - BMBaseLibrary/BMManager (1.0.0)
+  - BMBaseLibrary/BMModel (1.0.0)
+  - BMBaseLibrary/BMModule (1.0.0):
     - Realm (= 2.6.2)
-  - BMBaseLibrary/BMNetwork (0.0.1)
-  - BMBaseLibrary/BMTransition (0.0.1)
-  - BMBaseLibrary/BMWeexExtension (0.0.1)
-  - BMBaseLibrary/ErosApp (0.0.1)
-  - BMBaseLibrary/WeexPlugins (0.0.1):
-    - AMapNavi-NO-IDFA (= 5.0.1)
+  - BMBaseLibrary/BMNetwork (1.0.0)
+  - BMBaseLibrary/BMTransition (1.0.0)
+  - BMBaseLibrary/BMWeexExtension (1.0.0)
+  - BMBaseLibrary/ErosApp (1.0.0)
+  - BMBaseLibrary/WeexPlugins (1.0.0):
+    - AMap3DMap-NO-IDFA (= 5.6.0)
   - FDFullscreenPopGesture (1.1)
   - FSCalendar (2.7.8)
-  - GTSDK (1.6.2.0-noidfa)
-  - Masonry (1.0.2)
+  - GTSDK (2.0.0.0-noidfa)
+  - Masonry (1.1.0)
   - MJRefresh (3.1.12)
   - Realm (2.6.2):
     - Realm/Headers (= 2.6.2)
@@ -53,14 +50,17 @@ PODS:
   - SDWebImage/Core (3.7.5)
   - SocketRocket (0.4.2)
   - SSZipArchive (1.6.2)
-  - SVProgressHUD (2.1.2)
-  - TZImagePickerController (1.7.8)
+  - SVProgressHUD (2.2.2)
+  - TZImagePickerController (1.9.6)
   - UMengAnalytics-NO-IDFA (4.2.5)
-  - UMengUShare/Core (6.3.0):
+  - UMengUShare/Core (6.4.6):
     - UMengUShare/Network
-  - UMengUShare/Network (6.3.0)
-  - UMengUShare/Social/WeChat (6.3.0):
+  - UMengUShare/Network (6.4.6)
+  - UMengUShare/Social/ReducedWeChat (6.4.6):
     - UMengUShare/Core
+  - UMengUShare/Social/WeChat (6.4.6):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedWeChat
   - WeexSDK (0.15.0):
     - SocketRocket
   - WXDevtool (0.15.1):
@@ -88,16 +88,16 @@ DEPENDENCIES:
   - BMBaseLibrary/ErosApp (from `./Benmu-iOS-Library`)
   - BMBaseLibrary/WeexPlugins (from `./Benmu-iOS-Library`)
   - FDFullscreenPopGesture (= 1.1)
-  - GTSDK (= 1.6.2.0-noidfa)
-  - Masonry (= 1.0.2)
+  - GTSDK (= 2.0.0.0-noidfa)
+  - Masonry (= 1.1.0)
   - MJRefresh (= 3.1.12)
   - SDWebImage (= 3.7.5)
   - SocketRocket (= 0.4.2)
   - SSZipArchive (= 1.6.2)
-  - SVProgressHUD (= 2.1.2)
-  - TZImagePickerController (= 1.7.8)
+  - SVProgressHUD (= 2.2.2)
+  - TZImagePickerController (= 1.9.6)
   - UMengAnalytics-NO-IDFA (= 4.2.5)
-  - UMengUShare/Social/WeChat (= 6.3.0)
+  - UMengUShare/Social/WeChat (= 6.4.6)
   - WeexSDK (from `./WeexiOSSDK/`)
   - WXDevtool (= 0.15.1)
   - YTKNetwork (= 2.0.3)
@@ -111,30 +111,29 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  AMap3DMap-NO-IDFA: 82a5cd2f84b22dbdc2cd7b87ab09d35337da8e52
+  AMap3DMap-NO-IDFA: c47a44b45eb16b5c8cffc5d1f0699aea727e01a6
   AMapFoundation-NO-IDFA: 3b9ce87abc6a37c718cc320687469d0b74d5c953
-  AMapNavi-NO-IDFA: 3620c6b9d06364d912b016b89ba656a1bab02fd3
   ATSDK-Weex: 1b27558f4336d77fb97704d34fc6ad1fd468592c
-  BMBaseLibrary: 22441b83ab1dacc91126476d84f0c700716a0e35
+  BMBaseLibrary: bbe7d497c1d761539bb4a721e39657dc331f598f
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   FSCalendar: 09369a2bf554ba71cd8e8cfb627e2df22a2c2af4
-  GTSDK: 994039cd51dd7d65125b18ca42136968ef96a236
-  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  GTSDK: 46c0f8dd41ee1f4117b8fd608a4d8a6ad3fc08b3
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   Realm: 29222766425b9f831228f81b63f0e38a97a4d700
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
   SSZipArchive: 428eb1ac8d37dd133404d30f422b23958c1f9acc
-  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
-  TZImagePickerController: 87a138ae5d585225aaa6c8abe2cface0f0ad19dd
+  SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
+  TZImagePickerController: 276dc7c0cc70da9ee354046474b405d87ef81c89
   UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
-  UMengUShare: b208ac3bcf1f63d11a100b359990e9d77a0f2085
+  UMengUShare: fdbbf86353976727af26a66e9a84314ecb59c816
   WeexSDK: 8ab2e6e221461f0010d3aa59026607a731df11ea
   WXDevtool: 5b26fd79451f215d7acdee89e5e2f3be491a1393
   YTKNetwork: c4b0c29c9d639dc050d475de69ee626d53eac598
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 7eac7f1fb0b90dd8c019d3d745067d2b4ff202b5
+PODFILE CHECKSUM: 0e737c410263bdf79598f4f93a2fdd93d100c687
 
 COCOAPODS: 1.3.1
